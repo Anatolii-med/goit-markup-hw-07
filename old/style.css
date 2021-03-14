@@ -1,30 +1,4 @@
-:root {
-  /* background */
-  --bgc-main: #ffffff;
-  --bgc-dark: #f5f4fa;
-  --bgc-light: #e5e5e5;
-  --bgc-accent: #2196f3;
-  --bgc-hero-footer: #2f303a;
-  --overlay: rgba(33, 150, 243, 0.9);
 
-  /* text */
-  --txt-c-dark: #000000;
-  --txt-c-grey: #212121;
-  --txt-c-grey-light: #757575;
-  --txt-c-accent: #2196f3;
-  --txt-c-address: rgba(255, 255, 255, 0.6);
-  --txt-c-light: #ffffff;
-  --card-set-gap: 30px;
-  --social-color: #afb1b8;
-
-  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-body {
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
-  color: var(--txt-c-grey-light);
-}
 
 .container {
   max-width: 1200px;
@@ -35,9 +9,7 @@ body {
   /* outline: 1px solid teal; */
 }
 
-a {
-  text-decoration: none;
-}
+
 
 .list {
   list-style: none;
@@ -90,7 +62,7 @@ a {
 } */
 
 header {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .header-cont {
@@ -132,7 +104,7 @@ header {
   line-height: 1.17;
   letter-spacing: 0.03em;
 
-  transition: color 250ms var(--cubic);
+  transition: color var(--transiton-time) var(--cubic);
 }
 
 .site-nav .link.current {
@@ -196,7 +168,7 @@ header {
   padding: 32px 0px;
   white-space: nowrap;
 
-  transition: color 250ms var(--cubic);
+  transition: color var(--transiton-time) var(--cubic);
 }
 
 .logo:hover,
@@ -207,7 +179,7 @@ header {
 .auth-nav .link:focus {
   color: var(--txt-c-accent);
 
-  transition: color 250ms var(--cubic);
+  transition: color var(--transiton-time) var(--cubic);
 }
 
 /* *hero ====================================*/
@@ -422,7 +394,7 @@ header {
 
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px var(--backdrop-op02);
 }
 
 .team-item-name {
@@ -472,7 +444,7 @@ header {
 
   border-radius: 50%;
 
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
+  transition: background-color var(--transiton-time) var(--cubic), color var(--transiton-time) var(--cubic);
 }
 
 .social-link:hover,
@@ -480,7 +452,7 @@ header {
   background-color: var(--bgc-accent);
   color: var(--bgc-main);
 
-  transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
+  transition: color var(--transiton-time) var(--cubic), background-color var(--transiton-time) var(--cubic);
 }
 
 .social-icon {
@@ -513,7 +485,7 @@ header {
 
   border-radius: 4px;
 
-  transition: color 250ms var(--cubic), border 250ms var(--cubic);
+  transition: color var(--transiton-time) var(--cubic), border var(--transiton-time) var(--cubic);
 }
 
 .client-link:hover,
@@ -521,7 +493,7 @@ header {
   color: var(--txt-c-accent);
   border: 1px solid var(--txt-c-accent);
 
-  transition: color 250ms var(--cubic), border 250ms var(--cubic);
+  transition: color var(--transiton-time) var(--cubic), border var(--transiton-time) var(--cubic);
 }
 
 .client-logo {
@@ -618,7 +590,7 @@ header {
 
   border-radius: 50%;
 
-  transition: background-color 250ms var(--cubic);
+  transition: background-color var(--transiton-time) var(--cubic);
 }
 
 .footer .social-item:not(:last-child) {
@@ -629,7 +601,7 @@ header {
 .footer-social-link:focus {
   background-color: var(--bgc-accent);
 
-  transition: background-color 250ms var(--cubic);
+  transition: background-color var(--transiton-time) var(--cubic);
 }
 
 .subscribe-wrap {
@@ -666,7 +638,7 @@ header {
 
   color: var(--bgc-main);
   background-color: var(--bgc-accent);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--btn-boxshadow-color);
   border-radius: 4px;
   border: none;
 
@@ -704,7 +676,7 @@ header {
 
   border-radius: 4px;
 
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+  transition: background-color var(--transiton-time) var(--cubic), color var(--transiton-time) var(--cubic), box-shadow var(--transiton-time) var(--cubic);
 }
 
 .btn-container .item:not(:last-child) {
@@ -729,7 +701,7 @@ header {
   letter-spacing: 0.03em;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
-  transition: background-color 250ms var(--cubic), color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+  transition: background-color var(--transiton-time) var(--cubic), color var(--transiton-time) var(--cubic), box-shadow var(--transiton-time) var(--cubic);
 }
 
 /* *cards================================== */
@@ -812,7 +784,7 @@ header {
   left: 0;
 
   transform: translateY(101%);
-  transition: transform 250ms var(--cubic);
+  transition: transform var(--transiton-time) var(--cubic);
 
   z-index: 2;
 }
@@ -833,7 +805,7 @@ header {
   left: 0;
 
   transform: translateY(100%);
-  transition: transform 250ms var(--cubic);
+  transition: transform var(--transiton-time) var(--cubic);
 
   z-index: 1;
 } */
@@ -853,7 +825,7 @@ header {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--backdrop-op02);
 
   opacity: 1;
   transition: opacity 500ms var(--cubic);
@@ -874,7 +846,7 @@ header {
 
   background: var(--bgc-main);
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px var(--backdrop-op02);
   border-radius: 4px;
 
   transform: translate(-50%, -50%) scale(1);
@@ -906,7 +878,7 @@ header {
 
   padding: 0;
 
-  transition: color 250ms var(--cubic);
+  transition: color var(--transiton-time) var(--cubic);
 }
 
 .close-btn:hover,
@@ -945,7 +917,7 @@ header {
   border-radius: 4px;
   outline: none;
 
-  transition: border-color 250ms var(--cubic);
+  transition: border-color var(--transiton-time) var(--cubic);
 }
 
 .label-wrap {
@@ -963,7 +935,7 @@ header {
   left: 12px;
 
   transform: translateY(-50%);
-  transition: color 250ms var(--cubic);
+  transition: color var(--transiton-time) var(--cubic);
 }
 
 .modal-input:focus,
@@ -991,7 +963,7 @@ header {
 }
 
 .modal-input.area::placeholder {
-  color: rgba(117, 117, 117, 0.5);
+  color: var(--placeholder-color);
 }
 
 .modal-check:focus ~ .modal-icon-check {
@@ -1034,7 +1006,7 @@ header {
   width: 16px;
   height: 16px;
   left: 13px;
-  transition: opacity 250ms var(--cubic);
+  transition: opacity var(--transiton-time) var(--cubic);
 }
 
 .modal-icon-check {
@@ -1065,7 +1037,7 @@ header {
 
   color: var(--txt-c-light);
   background: var(--bgc-accent);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px var(--btn-boxshadow-color);
   border-radius: 4px;
   border: none;
 
