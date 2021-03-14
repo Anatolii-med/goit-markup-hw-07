@@ -9,3 +9,18 @@ a {
   text-decoration: none;
 
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  /* outline: 1px solid teal; */
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
