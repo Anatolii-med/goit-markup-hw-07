@@ -283,20 +283,37 @@ header {
 }
 
 .button {
-  display: inline-block;
   color: var(--txt-c-light);
   background-color: var(--bgc-accent);
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.875;
   letter-spacing: 0.06em;
-  text-align: center;
   min-width: 200px;
   min-height: 50px;
   border-radius: 4px;
   border: none;
   cursor: pointer;
+}
+
+.hero-button {
+  display: inline-block;
+  text-align: center;
+}
+
+.subscribe__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 4px 4px var(--btn-boxshadow-color);
+          box-shadow: 0px 4px 4px var(--btn-boxshadow-color);
+  padding: 0 29px;
+  position: relative;
 }
 
 .advantage-list {
@@ -527,16 +544,6 @@ header {
   font-style: normal;
 }
 
-.footer-adres__item:not(:last-child) {
-  margin: 0 0 9px 0;
-  padding: 0;
-}
-
-.footer-adres__link {
-  margin: 0;
-  padding: 0;
-}
-
 .footer__adres {
   display: block;
   color: var(--bgc-main);
@@ -547,10 +554,6 @@ header {
   text-align: left;
   padding: 0;
   margin-bottom: 9px;
-}
-
-.footer-adres__link {
-  color: var(--txt-c-address);
 }
 
 .footer__title {
@@ -587,31 +590,6 @@ header {
   margin-right: 12px;
 }
 
-.subscribe__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 50px;
-  width: 200px;
-  text-align: left;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: var(--bgc-main);
-  background-color: var(--bgc-accent);
-  -webkit-box-shadow: 0px 4px 4px var(--btn-boxshadow-color);
-          box-shadow: 0px 4px 4px var(--btn-boxshadow-color);
-  border-radius: 4px;
-  border: none;
-  padding: 0 29px;
-  position: relative;
-  cursor: pointer;
-}
-
 .footer__subscribe-icon {
   fill: currentColor;
   width: 24px;
@@ -620,7 +598,27 @@ header {
   position: absolute;
 }
 
-.team-social {
+.footer-adres__item:not(:last-child) {
+  margin: 0 0 9px 0;
+  padding: 0;
+}
+
+.footer-adres__link {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-adres__link {
+  color: var(--txt-c-address);
+}
+
+.social-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+.team-list__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -629,11 +627,11 @@ header {
           justify-content: center;
 }
 
-.team-social .social-item:not(:last-child) {
+.team-list__social .social-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.team-list .social-link {
+.team-list__social-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -651,31 +649,24 @@ header {
   transition: background-color var(--transiton-time) var(--cubic), color var(--transiton-time) var(--cubic);
 }
 
-.social-link:hover,
-.social-link:focus {
+.team-list__social-link:hover, .team-list__social-link:focus {
   background-color: var(--bgc-accent);
   color: var(--bgc-main);
   -webkit-transition: color var(--transiton-time) var(--cubic), background-color var(--transiton-time) var(--cubic);
   transition: color var(--transiton-time) var(--cubic), background-color var(--transiton-time) var(--cubic);
 }
 
-.social-icon {
-  fill: currentColor;
-  width: 20px;
-  height: 20px;
-}
-
 .footer-social {
   margin-right: 93px;
 }
 
-.footer-social-list {
+.footer-social__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer-social-link {
+.footer-social__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -694,15 +685,14 @@ header {
   transition: background-color var(--transiton-time) var(--cubic);
 }
 
-.footer .social-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer-social__link:hover, .footer-social__link:focus {
   background-color: var(--bgc-accent);
   -webkit-transition: background-color var(--transiton-time) var(--cubic);
   transition: background-color var(--transiton-time) var(--cubic);
+}
+
+.footer-social__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* * CLIENTS========================================== */
