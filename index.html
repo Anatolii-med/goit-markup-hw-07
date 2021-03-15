@@ -444,63 +444,64 @@
 
     <div class="modal">
 
-      <button class="close-btn" data-modal-close>
+      <button class="modal__close" data-modal-close>
         <svg width="18px" height="18px">
           <use href="./img/icons.svg#icon-close"></use>
         </svg>
       </button>
 
-      <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+      <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
 
-      <form action="register-form" class="modal-form">
+      <form action="register-form" class="modal__form">
 
-        <div class="modal-form">
+        <div class="modal__form">
 
-          <label class="item modal-label" for="name">Имя</label>
-          <div class="label-wrap">
-            <input type="text" id="name" name="name" class="modal-input text">
-            <svg class="modal-icon">
+          <label class="modal__item modal__label" for="name">Имя</label>
+          <div class="label__wrap">
+            <input type="text" id="name" name="name" class="modal__input">
+            <svg class="modal__icon">
               <use href="./img/icons.svg#icon-person"></use>
             </svg>
           </div>
 
 
-          <label class="item modal-label" for="tel">Телефон </label>
-          <div class="label-wrap">
-            <input type="tel" id="tel" name="tel" class="modal-input text">
-            <svg class="modal-icon">
+          <label class="modal__item modal__label" for="tel">Телефон </label>
+          <div class="label__wrap">
+            <input type="tel" id="tel" name="tel" class="modal__input">
+            <svg class="modal__icon">
               <use href="./img/icons.svg#icon-phone"></use>
             </svg>
           </div>
 
-          <label class="item modal-label" for="email">Почта </label>
-          <div class="label-wrap">
-            <input type="email" id="email" name="email" class="modal-input text">
-            <svg class="modal-icon">
+          <label class="modal__item modal__label" for="email">Почта </label>
+          <div class="label__wrap">
+            <input type="email" id="email" name="email" class="modal__input">
+            <svg class="modal__icon">
               <use href="./img/icons.svg#icon-email"></use>
             </svg>
           </div>
 
-          <label class="item modal-label" for="comment"> Комментарий </label>
-          <textarea id="comment" class="modal-input area" name="comment" placeholder="Введите текст"></textarea>
+          <label class="modal__item modal__label" for="comment"> Комментарий </label>
+          <textarea id="comment" class="modal__input modal__area" name="comment" placeholder="Введите текст"></textarea>
 
         </div>
 
-        <label class="modal-chekbox">
+        <label class="modal__chekbox">
 
-          <input type="checkbox" name="license" id="license" class="modal-check visually-hidden">
-          <span class="modal-check-label">Соглашаюсь с рассылкой и принимаю <a href="#" class="modal-check-link">Условия
+          <input type="checkbox" name="license" id="license" class="modal__check visually-hidden">
+          <span class="modal__check-label">Соглашаюсь с рассылкой и принимаю <a href="#"
+              class="modal__check-link">Условия
               договора</a></span>
-          <svg class="modal-icon-check">
+          <svg class="modal__icon-check">
             <use href="./img/icons.svg#icon-check"></use>
           </svg>
-          <svg class="modal-icon-noncheck">
+          <svg class="modal__icon-noncheck">
             <use href="./img/icons.svg#icon-noncheck"></use>
           </svg>
 
         </label>
 
-        <button type="submit" class="modal-submit">Отправить</button>
+        <button type="submit" class="modal__submit-btn button">Отправить</button>
       </form>
     </div>
 
