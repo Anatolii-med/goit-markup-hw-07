@@ -449,6 +449,49 @@ header {
   margin-bottom: 16px;
 }
 
+.clients-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clients-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-list__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: var(--social-color);
+  border: 1px solid var(--social-color);
+  width: 170px;
+  height: 90px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+  -webkit-transition: color var(--transiton-time) var(--cubic), border var(--transiton-time) var(--cubic);
+  transition: color var(--transiton-time) var(--cubic), border var(--transiton-time) var(--cubic);
+}
+
+.clients-list__link:hover, .clients-list__link:focus {
+  color: var(--txt-c-accent);
+  border: 1px solid var(--txt-c-accent);
+  -webkit-transition: color var(--transiton-time) var(--cubic), border var(--transiton-time) var(--cubic);
+  transition: color var(--transiton-time) var(--cubic), border var(--transiton-time) var(--cubic);
+}
+
+.clients-list__logo {
+  fill: currentColor;
+}
+
 .team-social {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -495,50 +538,6 @@ header {
 }
 
 /* * CLIENTS========================================== */
-.clients-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.clients-list .client-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.client-link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: var(--social-color);
-  border: 1px solid var(--social-color);
-  width: 170px;
-  height: 90px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 4px;
-  -webkit-transition: color var(--transiton-time) var(--cubic), border var(--transiton-time) var(--cubic);
-  transition: color var(--transiton-time) var(--cubic), border var(--transiton-time) var(--cubic);
-}
-
-.client-link:hover,
-.client-link:focus {
-  color: var(--txt-c-accent);
-  border: 1px solid var(--txt-c-accent);
-  -webkit-transition: color var(--transiton-time) var(--cubic), border var(--transiton-time) var(--cubic);
-  transition: color var(--transiton-time) var(--cubic), border var(--transiton-time) var(--cubic);
-}
-
-.client-logo {
-  fill: currentColor;
-}
-
 /* *footer */
 .footer {
   background-color: var(--bgc-hero-footer);

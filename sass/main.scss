@@ -7,6 +7,7 @@
 @import 'components/advantage';
 @import 'components/work';
 @import 'components/team';
+@import 'components/clients';
 
 
 .team-social {
@@ -48,43 +49,6 @@
 }
 
 /* * CLIENTS========================================== */
-
-.clients-list {
-  display: flex;
-  justify-content: center;
-}
-
-.clients-list .client-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.client-link {
-  display: flex;
-  color: var(--social-color);
-  border: 1px solid var(--social-color);
-
-  width: 170px;
-  height: 90px;
-
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 4px;
-
-  transition: color var(--transiton-time) var(--cubic), border var(--transiton-time) var(--cubic);
-}
-
-.client-link:hover,
-.client-link:focus {
-  color: var(--txt-c-accent);
-  border: 1px solid var(--txt-c-accent);
-
-  transition: color var(--transiton-time) var(--cubic), border var(--transiton-time) var(--cubic);
-}
-
-.client-logo {
-  fill: currentColor;
-}
 
 /* *footer */
 
