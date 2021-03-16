@@ -2,10 +2,10 @@
 .advantage-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
   
   &__item {
     flex-basis: calc(100% / 4 - var(--card-set-gap));
-    margin-top: var(--card-set-gap);
     margin-left: var(--card-set-gap);
   }
 
@@ -13,7 +13,7 @@
     width: 70px;
     height: 70px;
     
-    margin: 25px auto 25px auto;
+    // margin: 25px auto 25px auto;
   }
 
   &__title {
@@ -40,7 +40,11 @@
 .advantage-icon-wrap {
   display: flex;
   background-color: var(--bgc-dark);
-  
+  align-items: center;
+  justify-content: center;
+
+  width: auto;
+  height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
 }
