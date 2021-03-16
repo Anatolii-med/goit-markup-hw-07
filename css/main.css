@@ -365,7 +365,7 @@ header {
   margin-bottom: 0;
 }
 
-.advantage-icon-wrap {
+.advantage__icon-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
