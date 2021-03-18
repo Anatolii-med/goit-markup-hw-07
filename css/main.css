@@ -322,7 +322,6 @@ header {
           box-shadow: 0px 4px 4px var(--btn-boxshadow-color);
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
 }
 
 .advantage-list {
@@ -361,6 +360,7 @@ header {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: left;
+  color: var(--txt-c-grey-light);
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -446,6 +446,17 @@ header {
   margin-top: calc(-1 * var(--card-set-gap));
 }
 
+.team-list__name {
+  color: var(--txt-c-grey);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 .team-list__item {
   -ms-flex-preferred-size: calc(100% / 4 - var(--card-set-gap));
       flex-basis: calc(100% / 4 - var(--card-set-gap));
@@ -458,28 +469,18 @@ header {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px var(--backdrop-op02);
 }
 
-.team-item-name {
-  padding: 30px 32px;
-}
-
-.team-list__name {
-  color: var(--txt-c-grey);
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
 .team-list__content {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--txt-c-grey-light);
   margin-top: 0;
   margin-bottom: 16px;
+}
+
+.team-item-name {
+  padding: 30px 32px;
 }
 
 .clients-list {
