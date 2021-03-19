@@ -1009,6 +1009,10 @@ header {
   margin-bottom: 10px;
 }
 
+.label__wrap:nth-child(7) {
+  margin-bottom: 20px;
+}
+
 .modal__icon {
   position: absolute;
   width: 18px;
