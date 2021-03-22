@@ -477,26 +477,28 @@
             </svg>
           </div>
 
-          <label class="modal__item modal__label" for="comment"> Комментарий </label>
-          <textarea id="comment" class="modal__input modal__area" name="comment" placeholder="Введите текст"></textarea>
+          <div class="label__wrap">
+            <label class="modal__item modal__label" for="comment"> Комментарий </label>
+            <textarea id="comment" class="modal__input modal__area" name="comment"
+              placeholder="Введите текст"></textarea>
+          </div>
 
+
+          <label class="modal__chekbox">
+
+            <input type="checkbox" name="license" id="license" class="modal__check visually-hidden">
+            <span class="modal__check-label">Соглашаюсь с рассылкой и принимаю <a href="#"
+                class="modal__check-link">Условия
+                договора</a></span>
+            <svg class="modal__icon-check">
+              <use href="./img/icons.svg#icon-check"></use>
+            </svg>
+            <svg class="modal__icon-noncheck">
+              <use href="./img/icons.svg#icon-noncheck"></use>
+            </svg>
+
+          </label>
         </div>
-
-        <label class="modal__chekbox">
-
-          <input type="checkbox" name="license" id="license" class="modal__check visually-hidden">
-          <span class="modal__check-label">Соглашаюсь с рассылкой и принимаю <a href="#"
-              class="modal__check-link">Условия
-              договора</a></span>
-          <svg class="modal__icon-check">
-            <use href="./img/icons.svg#icon-check"></use>
-          </svg>
-          <svg class="modal__icon-noncheck">
-            <use href="./img/icons.svg#icon-noncheck"></use>
-          </svg>
-
-        </label>
-
         <button type="submit" class="modal__submit-btn button">Отправить</button>
       </form>
     </div>

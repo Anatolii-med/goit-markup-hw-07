@@ -2,7 +2,7 @@
 body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
-  color: var(--txt-c-grey-light);
+  color: $txt-c-grey-light;
 }
 
 a {
@@ -11,7 +11,7 @@ a {
 }
 
 .container {
-  max-width: 1200px;
+  min-width: 320px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -28,7 +28,7 @@ a {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  color: var(--txt-c-grey);
+  color: $txt-c-grey;
 }
 
 .no-top-padding {
